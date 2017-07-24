@@ -10,11 +10,17 @@ import { LibraryPage } from '../pages/library/library';
 import { QuotesPage } from '../pages/quotes/quotes';
 import { QuotePage } from '../pages/quote/quote';
 import { SettingsPage } from '../pages/settings/settings';
+import {TabsPage} from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
     MyApp,
-    FavoritesPage
+    FavoritesPage,
+    LibraryPage,
+    QuotesPage, 
+    QuotePage,
+    SettingsPage,
+    TabsPage,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,12 @@ import { SettingsPage } from '../pages/settings/settings';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    FavoritesPage
+    FavoritesPage,
+    LibraryPage,
+    QuotesPage, 
+    QuotePage,
+    SettingsPage,
+    TabsPage,
   ],
   providers: [
     StatusBar,
