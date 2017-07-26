@@ -10,7 +10,7 @@
 <ion-content padding text-center>
 	<ion-card padding>
 		<ion-card-content>
-			{{ text }}
+			text
 		</ion-card-content>
 
 		<ion-row>
@@ -22,5 +22,5 @@
 		</ion-row>
 	</ion-card>
 
-	<button ion-button color="danger">Close</button>
+	<button ion-button color="danger" (click)="onClose()">Close</button>
 </ion-content>
