@@ -40,4 +40,12 @@ export class QuotesPage {
 
 		alert.present();
 	}
+
+	onRemoveFromFavorite(quote: Quote) {
+		this.quotesService.removeQuoteToFavorites(quote);
+	}
+
+	isFavorite(quote: Quote) {
+		return this.quotesService.isQuoteFavorite(quote);
+	}
 }
