@@ -22,13 +22,13 @@ export class QuotesPage {
 			subTitle: 'Are you sure?',
 			message: 'Are you sure you want to add the quote?',
 			buttons: [
-				{ 
-					text: 'Yes, go ahead', 
+				{
+					text: 'Yes, go ahead',
 					handler: () => {
 						this.quotesService.addQuoteToFavorites(selectedQuote);
 					}
 				},
-				{ 
+				{
 					text: 'No, thanks',
 					role: 'cancel',
 					handler: () => {

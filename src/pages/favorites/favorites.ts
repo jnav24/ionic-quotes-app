@@ -22,12 +22,16 @@ export class FavoritesPage {
 		modal.present();
 		modal.onDidDismiss((remove: boolean) => {
 			if (remove) {
-				this.quotesService.removeQuoteToFavorites(quote);
-				const position = this.quotes.findIndex((quoteElem: Quote) => {
-					return quoteElem.id == quote.id;
-				});
-				this.quotes.splice(position, 1);
+				this.onRemoveFromFavorites(quote);
 			}
 		});
+	}
+
+	onRemoveFromFavorites(quote: Quote) {
+		this.quotesService.removeQuoteToFavorites(quote);
+		const position = this.quotes.findIndex((quoteElem: Quote) => {
+			return quoteElem.id == quote.id;
+		});
+		this.quotes.splice(position, 1);
 	}
 }
